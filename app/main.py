@@ -18,7 +18,7 @@ app = FastAPI(title="Inventory Management API", version="1.0.0")
 allowed_origins = [
     "http://localhost:5173",
     "http://127.0.0.1:5173",
-    "https://inventry-system-assisgnment-fronten.vercel.app/login"
+    "https://inventry-system-assisgnment-fronten.vercel.app",
 ]
 if os.getenv("CORS_ORIGINS"):
     allowed_origins.extend(
